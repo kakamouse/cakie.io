@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>投票系统 - 登录</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <div class="background">
+    <div class="login">
+        <div class="shuoming">
+            <p>伍老师😢，由于本人技术还没达标，注册页面能进入，但注册功能还未完善，想要进入投票系统请输入账号且密码：little1mouse</p>
+        </div>
+        <h2>登录</h2>
+        <form id="login-form">
+            <input type="text" placeholder="用户名" id="username" required>
+            <input type="password" placeholder="密码" id="password" required>
+            <button type="submit">登录</button>
+        </form>
+        <p>还没有帐号？<a href="register.html">注册</a></p>
+    </div>
+</div>
+
+<script>
+document.getElementById("login-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // 本来想添加用户名和密码的验证逻辑，例如与服务器交互进行验证，但是没弄好
+
+    if (username === "little1mouse" && password === "little1mouse") {
+        window.location.href = "vote.html"; 
+    } else {
+        alert("登录失败，请检查用户名和密码");
+    }
+});
+</script>
+
+    
+</body>
+</html>

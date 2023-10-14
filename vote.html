@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>投票页面</title>
+    <script src="path/to/your/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./vote1.css">
+</head>
+
+<body>
+    <h2 align="center"></h2align>选出你心目中的男神</h2>
+    <audio controls autoplay>
+        <source src="npCswag - 我的少年.mp3" type="audio/mpeg">
+        老师如果歌没放出来可能浏览器不支持
+    </audio>
+
+    <form id="vote-form">
+     <div class="photo11">
+        <div class="photo-block">
+            <img class="photo" src="kunkun.jpg" alt="照片1">
+            <p class="photo-description">蔡徐坤（KUN，1998年8月2日—），出生于浙江省温州市， 中国内地男歌手、原创音乐制作人、MV导演、演员。 2012年4月，因参加 综艺节目 《 向上吧！ 少年 》而进入娱乐圈；8月，首次参演电视剧《 童话二分之一 》。 2016年10月，加入男子组合 SWIN 正式出道。</p>
+            <input type="radio" class="vote-radio" id="option1" name="vote" value="option1">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="cln.jpg" alt="照片2">
+            <p class="photo-description">陈立农（Leo，2000年10月3日-），出生于中国台湾高雄， 中国台湾男歌手、演员 。 2018年，参加偶像男团真人秀节目《 偶像练习生 》，获得第2名 。</p>
+            <input type="radio" class="vote-radio" id="option2" name="vote" value="option2">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="fcc.jpg" alt="照片3">
+            <p class="photo-description">范丞丞，2000年6月bai16日出生于山东省青岛市，du中国内地男歌手、男子zhi组合乐dao华七子NEXT、NINE PERCENT成员。 2018年4月6日，在偶像竞演养成类真人秀《偶像练习生》总决赛中获得第三名，作为男子团体NINE PERCENT成员正式出道</p>
+            <input type="radio" class="vote-radio" id="option3" name="vote" value="option3">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="hmh.jpg" alt="照片4">
+            <p class="photo-description">黄明昊（Justin，2002年2月19日-），出生于浙江温州，中国内地男歌手、词曲创作人、乐华七子NEXT成员。</p>
+            <input type="radio" class="vote-radio" id="option4" name="vote" value="option4">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="lyj.jpg" alt="照片5">
+            <p class="photo-description">林彦俊（Evan Lin），1995年8月24日出生于海南省海口市，籍贯中国台湾，华语流行乐男歌手、演员。2017年，正式成为香蕉娱乐练习生团体Trainee18成员，并随TRAINEE 18推出练习生毕业单曲《ROCK THE SHOW》。</p>
+            <input type="radio" class="vote-radio" id="option5" name="vote" value="option5">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="zzt.jpg" alt="照片6">
+            <p class="photo-description">朱正廷，1996年3月18日出生于安徽省，中国内地流行乐男歌手、影视演员、舞者、音乐制作人，前男子演唱组合NINE PERCENT成员、NEXT队长。2014年获全国职业技能大赛舞蹈类一等奖；</p>
+            <input type="radio" class="vote-radio" id="option6" name="vote" value="option6">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="wzy.jpg" alt="照片6">
+            <p class="photo-description">王子异，1996年7月13日出生于山西省太原市，中国内地流行乐男歌手、演员，前男子演唱组合NINE PERCENT成员。</p>
+            <input type="radio" class="vote-radio" id="option7" name="vote" value="option7">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="wlk.jpg" alt="照片6">
+            <p class="photo-description">王琳凯，参加爱奇艺Hip-Hop音乐选秀节目《中国有嘻哈》，获得全国70强，从而正式进入演艺圈；2018年1月，参加爱奇艺偶像男团竞演养成类真人秀节目《偶像练习生》，最终加入九人男团NINE PERCENT并正式出道 ；8月29日，获得华人歌曲音乐盛典全媒体推荐年度新人奖，而歌曲《Good Night》则获得年度金曲奖 ；11月20日，随NINE PERCENT推出组合首张音乐专辑《TO THE NINES》  。</p>
+            <input type="radio" class="vote-radio" id="option8" name="vote" value="option8">
+        </div>
+        <div class="photo-block">
+            <img class="photo" src="ycj.jpg" alt="照片6">
+            <p class="photo-description">尤长靖（Azora Chin，1994年9月19日-），出生于马来西亚柔佛州，毕业于南京艺术学院，马来西亚男歌手。 2018年，加入男团NINE PERCENT正式出道。2018年11月3日，获得“北京·国风极乐夜”音乐盛典最佳国风新锐男歌手奖</p>
+            <input type="radio" class="vote-radio" id="option9" name="vote" value="option9">
+        </div>
+     </div>
+        <br>
+        <div class="button">
+        <button class="vote-button" type="submit">投票</button>
+        </div>
+    </form>
+    <div class="button">
+     <button class="vote-button" id="view-results-button">查看结果</button>
+     
+     </div>
+     
+     
+
+
+    <!-- JavaScript -->
+    <script>
+        let voteData = {
+            option1: 0,
+            option2: 0,
+            option3: 0,
+            option4: 0,
+            option5: 0,
+            option6: 0,
+            option7: 0,
+            option8: 0,
+            option9: 0
+        };
+
+        document.getElementById("vote-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            const selectedOption = document.querySelector('input[name="vote"]:checked');
+
+            if (selectedOption) {
+                voteData[selectedOption.value]++;
+                alert("投票成功!");
+            } else {
+                alert("请选择一个选项进行投票.");
+            }
+        });
+
+        document.getElementById("view-results-button").addEventListener("click", function () {
+            // 传递数据
+            localStorage.setItem("voteData", JSON.stringify(voteData));
+            
+            window.location.href = "results.html"; 
+        });
+        
+    </script>
+    
+</body>
+</html>

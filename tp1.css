@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h2 {
+    color: #333;
+}
+.register {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.register input[type="text"],
+.register input[type="password"],
+.register button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.register button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.background {
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url('zcbjt1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    
+}

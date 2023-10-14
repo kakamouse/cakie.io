@@ -1,0 +1,97 @@
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(234, 9, 9, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+.vote-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.vote-option label {
+    margin-left: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.vote-container {
+    display: flex;
+    align-items: center;
+}
+
+.vote-image {
+    margin-left: 100px;
+    max-width: 30%;
+    height: 10;
+}
+
+.image-description {
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.photo11 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-block {
+    width: 30%; 
+    margin: 10px;
+    text-align: center;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-description {
+    margin-top: 10px;
+}
+
+.vote-radio {
+    margin-top: 10px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* 投票按钮 */
+.vote-button {
+    margin: 10px; 
+}
+
+body {
+    background: linear-gradient(45deg, #ff5733, #33d3ff, #112515, #f5ff33);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

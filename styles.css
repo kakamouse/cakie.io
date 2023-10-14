@@ -1,0 +1,40 @@
+.login {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.background {
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url('dlbjt.png'); 
+    background-size: cover; 
+    background-position: center; 
+    
+}
+.shuoming {
+    width: 100%;
+    height: 50px; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: #8ea6e3;
+    color: #fff;
+}
+
+

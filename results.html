@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>结果页面</title>
+    <script src="path/to/your/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./jg1.css">
+</head>
+<body>
+  <div class="background">
+    <div class="results">
+    <h2 align="center">投票结果</h2>
+    
+    <p align="center">蔡徐坤 得票数: <span id="option1-votes">0</span></p>
+    <p align="center">陈立农 得票数: <span id="option2-votes">0</span></p>
+    <p align="center">范丞丞 得票数: <span id="option3-votes">0</span></p>
+    <p align="center">黄明昊 得票数: <span id="option4-votes">0</span></p>
+    <p align="center">林彦俊 得票数: <span id="option5-votes">0</span></p>
+    <p align="center">朱正廷 得票数: <span id="option6-votes">0</span></p>
+    <p align="center">王子异 得票数: <span id="option7-votes">0</span></p>
+    <p align="center">王琳凯 得票数: <span id="option8-votes">0</span></p>
+    <p align="center">尤长靖 得票数: <span id="option9-votes">0</span></p>
+   </div>
+  </div>
+    <!-- JavaScript  -->
+    <script>
+        const storedData = localStorage.getItem("voteData");
+        if (storedData) {
+            const voteData = JSON.parse(storedData);
+
+            document.getElementById("option1-votes").textContent = voteData.option1;
+            document.getElementById("option2-votes").textContent = voteData.option2;
+            document.getElementById("option3-votes").textContent = voteData.option3;
+            document.getElementById("option4-votes").textContent = voteData.option4;
+            document.getElementById("option5-votes").textContent = voteData.option5;
+            document.getElementById("option6-votes").textContent = voteData.option6;
+            document.getElementById("option7-votes").textContent = voteData.option7;
+            document.getElementById("option8-votes").textContent = voteData.option8;
+            document.getElementById("option9-votes").textContent = voteData.option9;
+        }
+    </script>
+</body>
+</html>

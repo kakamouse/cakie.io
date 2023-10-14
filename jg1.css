@@ -1,0 +1,19 @@
+.results {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.result-item {
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+.background {
+    margin-top: 0px;
+    height: 100vh;
+    background-image: url('jgbj1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    
+}
